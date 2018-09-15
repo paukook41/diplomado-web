@@ -1,65 +1,119 @@
 <!doctype html>
 <html>
-
 <head>
 <meta charset="UTF-8" />
 <title>ejercicio 1</title>
+<!--
+CSS: hojas de estilo en cascada.
+-->
+<!--<style>
+    p:last-child {color: blue;}
+</style>-->
+<link rel="stylesheet" href="css/main.css" />
+
 </head>
 
 <body>
-<div>
-	<header>
-		<h1>encabezado 1</h1>
-		<!--<h2>encabezado 2</h2>
+<div class="container">
+    <header>
+        <h1>Ejercicio 1.1</h1>
+        <!--<h2>encabezado 2</h2>
 		<h3>encabezado 3</h3>
 		<h4>encabezado 4</h4>
 		<h5>encabezado 5</h5>
-		<h6>encabezado 6</h6>-->
-		
-		<!--
+		<h6>encabezado 6</h6>--> 
+        
+        <!--
 		Título de libro: El amor en tiempos de colera
 		Cápitulo 1: Florentino ->h2]
-		-->
-		
-		<!--
+		--> 
+        
+        <!--
 		Rutas relativas:
 		-Para entrar a una carpeta usamos "/"
 		-Para salir ".."
-		-->
-		
-		<img src="images/header.jpg" alt="">
-		
-	</header>
-	<nav>
-		<!--
+		--> 
+        
+        <img src="images/header.jpg" alt=""> </header>
+    <nav> 
+        <!--
 		ul unordered list
 		ol ordered list
 		li list element
 		
 		El atributo target="_blank" abre página en nueva pestaña
 		-->
-		<ul>
-			<li>
-			  <a href="#">inicio</a>
-			</li>
-			<li><a href="#">servicios</a></li>
-			<li><a href="#">productos</a></li>
-			<li><a href="#">galería</a></li>
-			<li><a href="#">contacto</a></li>
-		</ul>
-	
-	<!--<ol>
+        <ul>
+            <li><a href="#init">inicio</a> </li>
+            <li><a href="#services">servicios</a></li>
+            <li><a href="#products">productos</a></li>
+            <li><a href="#gallery">galería</a></li>
+            <li><a href="#contact">contacto</a></li>
+        </ul>
+        
+        <!--<ol>
 			<li>opción 1</li>
 			<li>opción 2</li>
 			<li>opción 3</li>
 		</ol>
-	-->
-	</nav>
-	<main></main>
-	<footer></footer>		
-
-
+	--> 
+    </nav>
+    <main>
+        <section id="init">
+            <h2>Inicio</h2>
+            <a href="">elemento en línea 1</a>
+            <a href="">elemento en línea 2</a>
+            <p>Lorem ipsum</p>
+            <a href="">elemento en línea 3</a>
+            <img src="images/hamster.jpg" alt="">
+            <p id="verde" class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt blanditiis sequi deserunt ad eaque facere, quis error saepe quod, eos ab iusto reiciendis unde consequuntur veniam maxime ut nemo non.</p>
+            <p>Explicabo fugit, in itaque, minima et saepe. Reiciendis eligendi, soluta. Quam veritatis harum voluptatem magni expedita explicabo, dicta alias quos aut, quidem sequi? Sint ea, reprehenderit, inventore similique quas sed.</p>
+        </section>
+        <section id="services" class="section section-services"> 
+            <h2>Servicios</h2>
+            <img src="images/img2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, asperiores, assumenda! Dolores corrupti laudantium corporis reiciendis quam aut dignissimos sit dolorem, praesentium, unde inventore libero, quisquam ratione optio doloremque harum.</p>
+            <p>Totam corporis laudantium, distinctio praesentium iure? Laborum debitis, pariatur, iste unde aliquid velit eaque mollitia laudantium aliquam accusantium vitae voluptatum quasi voluptatibus sit praesentium rem, maxime placeat ex possimus natus.</p>
+        </section>
+        <section id="products">
+            <h2>Productos</h2>
+            <img src="images/img3.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum officia provident, magnam quod! Necessitatibus adipisci ipsa, libero. Aspernatur, ad, architecto necessitatibus itaque inventore, voluptatum, ducimus amet aliquid fugiat eum aperiam.</p>
+            <p>Eligendi quasi dolorem necessitatibus mollitia ab nesciunt nostrum suscipit, architecto neque voluptates quo, harum! Earum ipsam repellendus alias, pariatur ex. Minus delectus, totam itaque distinctio quis, inventore explicabo numquam illo.</p>
+        </section>
+        <section id="gallery">
+            <h2>Galería</h2>
+            <img src="images/img4.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur delectus tenetur expedita, voluptas est error, dolore perspiciatis natus quidem ab eaque praesentium veniam dolorem repellendus ut et, dicta odio.</p>
+            <p>Et placeat quidem adipisci quo atque eaque cumque dolores officiis non recusandae quod, maiores ad quaerat, incidunt veniam. Nihil provident ipsum obcaecati nam fuga, corporis tempora dolorem magnam, quibusdam ex.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <img src="images/img5.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit illum et impedit facilis ullam natus quidem, cum ut, dolorum explicabo ipsa similique eligendi magni obcaecati, facere est consectetur! Pariatur, distinctio?</p>
+            <p>Explicabo provident voluptates corporis dolorem laudantium illo facere, beatae, molestias magni, blanditiis quo. Nesciunt, deleniti, quo adipisci voluptatibus maiores, quae autem consequatur, tempore vel voluptatum perferendis deserunt harum culpa corporis?</p>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados | edumac 2018 | Pau</p>
+    </footer>
 </div>
+<!--
+REGLAS Y CONVENCIONES DE ATRIBUTO ID
+Reglas
+1. no espacios
+2. no carácteres especiales
+3. no guión bajo
 
+Convenciones
+1. siempre inglés
+2. formato CamelCase: 
+3. siempre minúsulas
+4. palabras separadas con guión medio
+section-services
+my-section
+my-section-web
+
+-->
 </body>
 </html>

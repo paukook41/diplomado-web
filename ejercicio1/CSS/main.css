@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/*
+Sintaxis de reglas CSS
+selector: indica al navegador cual será el elemento que se modificará.
+
+Lista de propiedades: Las que se modifican.
+selector{
+Nombre-propiedad: valor;
+
+color: #f00;
+font-family: arial;
+font-size: 30 px;
+}
+
+Selectores básicos:
+1. Etiqueta
+
+2. Clase
+se utiliza mediante el atributo "class"
+CLASS sirve principalmente para añadir estilos CSS a un determinado elemento.
+
+Sintaxis: "." prefijo del valor atributo "class".
+
+3. Identificador (no recomendado)
+se utiliza mediante el atributo "id"
+ID sirve principalmente para añadir comportamientos JavaScript a un determinado elemento.
+
+Sintaxis: "#" prefijo del valor atributo "Id".
+*/
+
+/*selector por etiqueta */
+/*
+p {
+    color: #f00
+}
+*/
+
+/*selector por class */
+/*
+.azul {
+    color: #00f
+}
+*/
+
+/*selector por Id*/
+/*
+#verde {
+    color: #0f0
+}
+*/
+
+
+body {
+    font-family: arial;
+    /*font-size: 16px;*/
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    
+    /*
+    Elementos de bloque son centrados con margen (margin) automático a la izquierda y derecha.
+    
+    Elementos de línea se centran con la propiedad "text-align".
+    
+    A un elemento en línea podemos darle comportamiento de bloque con "display: block".
+    A un elemento en bloque podemos darle comportamiento de línea con "display: inline".
+    */
+
+}
+
+h1 {
+    font-size: 30px;
+    color: #8726D9;
+    font-weight: 400;
+        /*
+        El valor 
+        200 ->think
+        300 ->light
+        400 ->normal
+        600 ->semibold
+        700 ->bold
+        800 ->black
+        900 ->extra bold
+        */
+text-transform:uppercase;
+
+}
+
+nav ul{
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+  margin-left: 20px;  
+}
+nav li:first-child {
+    margin-left: 0;
+}
+nav a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1D8395; 
+}
+nav a:hover {
+    text-decoration: overline;
+    color: #993BE5;
+}
+/*
+PROPIEDADES DEL MODELO DE CAJAS
+
+1. Brackground: propiedad general
+- color: valor exadecimal
+- image: url
+- repeat: repeat / no repeat
+- attachment: scroll / fixed
+- position: 
+PX: left, center, right, px.
+PY: top, center, bottom, px.
+
+2. Border: 
+Ancho del borde px
+Estilo del borde: solid, double
+Color del borde en hex.
+
+3. Padding: relleno, espacio entre borde y contenido.
+
+- 1 valor, se aplica a los 4 lados.
+
+- 2 valores
+1er valor top/bottom.
+2do valor: left/right
+
+- 3 valores:
+1er valor top.
+2do valor: left/right
+3er valor: bottom
+
+- 4 valores:
+1er valor top.
+2do valor: right
+3er valor: bottom
+4to valor: left
+
+Propiedades especificas de padding:
+-padding-top
+-padding-right
+-padding-bottom
+-padding-left
+
+4. Margin: espacio entre el borde y otros elementos.
+Propiedades especificas de margin:
+-margin-top
+-margin-right
+-margin-bottom
+-margin-left
+
+5.Width: valor [px % em]
+
+6. Height: valor [px % em]
+*/
+
+.section-services {
+   /* background: #8BB4C8 url(../images/header.jpg) no-repeat center center fixed;*/
+  /*  background-color: #8BB4C8;
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    /*
+    - color: valor exadecimal
+- image: url
+- repeat: repeat / no repeat
+- attachment: scroll / fixed
+- position: 
+PX: left, center, right, px.
+PY: top, center, bottom, px.
+ 
+    border: 1px solid #f0f;
+    padding: 10px 20px 30px 40px;
+    margin: 10px;
+    */
+
+}
+main h2{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #1D8395;
+}
+main img{
+    max-width: 300px;
+    border: 5px solid #1D8395;
+    box-shadow: -5px 5px 4px #666;
+}
+
+footer {
+    background-color: #666;
+    text-align: center;
+    color: #ccc;
+    padding: 16px 0;
+    
+}
+p{
+    margin: 0;
+}
+
+
