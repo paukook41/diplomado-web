@@ -1,33 +1,48 @@
 @charset "UTF-8";
 
+/* Fonts */ 
+@import url('https://fonts.googleapis.com/css?family=Mali:400,700');
+
+/* Font Awesome */
+@import url('lib/all.css');
+
 /* General */
 body {
     margin: 0;
     font-size: 16px;
-    font-family: Arial;
+    font-family: 'Mali', cursive;
 }
 
 ol, ul {
-margin: 0;
-padding: 0;
-list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 img {
+    display: block;
     max-width: 100;
 }
 
 .container {
     max-width: 1200px;
-margin: 0 auto;
-padding: 0 10px;
+    margin: 0 auto;
+    padding: 0 10px;
 
 }
 
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
 
 /* Header */
 .page-header {
-position: relative;
+    position: relative;
 }
 
 .page-header h1{
@@ -35,12 +50,13 @@ position: relative;
     font-weight: 400;
     text-transform: uppercase;
     text-shadow: 0 0 4px #BF7AB6;
-    color: #F16150;
+    color: #F8F7F5;
     margin: 0;
     position : absolute;
     top: 25px;
     left: 25px;
 }
+
 /** Nav */
 .page-nav ul{
     background-color: #5FBDB0;
@@ -58,11 +74,34 @@ position: relative;
     transition: all .3s;
 }
 .page-nav a:hover {
-    background-color: #BF7AB6;
+    background-color: #3d998d;
 }
+
 /* Main */
+.page-main{
+    padding: 65px 0;
+}
+.left {
+    width: 30.33%; 
+    float: left;
+    padding-right: 1%;
+}
+.right{
+    width: 48.66%;
+    float: right;
+    padding-left: 1%;
+}
 
 /* Footer */
+.page-footer{
+    background-color: #666;
+    padding: 16px 0;
+}
+.page-footer p{
+    color: #ccc;
+    text-align: center;
+    margin:0;
+}
 
 /* Helpers */
 .clearfix:before,
