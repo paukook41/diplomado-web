@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Canada</title>
+    <link rel="stylesheet" href="css/plugins/lightbox.min.css">
     <link rel="stylesheet" href="css/main.css" />
+   
 </head>
 
 <body>
@@ -27,16 +29,38 @@
         <main class="page-main">
             <section class="page-section clearfix">
                 <div class="left">
-                    <img src="images/3.jpg" alt="">
+                    <img src="images/4.jpg" alt="">
                 </div>
                 <div class="right">
-                <h2>Inicio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non quod sint rerum voluptatibus ex, aut laudantium temporibus nihil fugit, quos provident ab numquam vitae ad sit minima minus nulla?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non quod sint rerum voluptatibus ex, aut laudantium temporibus nihil fugit, quos provident ab numquam vitae ad sit minima minus nulla?</p>
-                
-                <h3>Quienes somos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quam consequatur deserunt incidunt excepturi est soluta, nostrum facere itaque, dolore magnam quibusdam aliquam esse voluptate porro aliquid culpa sequi totam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non quod sint rerum voluptatibus ex, aut laudantium temporibus nihil fugit, quos provident ab numquam vitae ad sit minima minus nulla?</p>
+                <h2>Galería</h2>
+               <ul class="gallery-list">
+                <li>
+                    <a href="images/1.jpg" data-lightbox="group-1" data-title="hallo">
+                        <img src="images/1small.jpg" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="images/2.jpg" data-lightbox="group-1" data-title="hola">
+                        <img src="images/2small.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/3.jpg" data-lightbox="group-1" data-title="konichiwa">
+                        <img src="images/3small.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/4.jpg" data-lightbox="group-2" data-title="hi">
+                        <img src="images/4small.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/5.jpg" data-lightbox="group-2" data-title="holo">
+                        <img src="images/5small.jpg" alt="">
+                    </a>
+                </li>
+               </ul>
+    
             </div>
 
             </section>
@@ -46,6 +70,8 @@
         </footer>
     </div>
     <div id="js">
+        <script src="js/lib/jquery-3.3.1.min.js"></script>
+        <script src="js/plugins/lightbox.min.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>
